@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #9c27b0;
+}
+
+.contact-btn {
+    background-color: #9c27b0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.contact-btn:hover {
+    background-color: #7b1fa2;
+    color: white !important;
+}
+
+.phone {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4a148c 0%, #6a1b9a 50%, #8e24aa 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px 50px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #9c27b0;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #9c27b0;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Blue Section (now purple) */
+.blue-section {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 80px 0;
+}
+
+.two-column {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.left-column, .right-column {
+    flex: 1;
+}
+
+.left-column h2, .right-column h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.right-column h2 {
+    font-size: 2rem;
+}
+
+.right-column p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.services-list li:before {
+    content: "•";
+    color: #e1bee7;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Mobile Responsive Update */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .left-column h2, .right-column h2 {
+        font-size: 1.8rem;
+    }
+    
+    .services-list li {
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .phone {
+        font-size: 16px;
+    }
+}
+/* Contact Section */
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
